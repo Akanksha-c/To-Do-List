@@ -2,7 +2,7 @@
   <body>
 
     <div class="box" id="heading">
-      <h1>It's a <%=KindOfDay%></h1>
+      <h1>It's a <%=KindOfDay%> list</h1>
     </div>
 
     <div class="box">
@@ -13,13 +13,14 @@
             <input type="checkbox" name="checkbox" value="<%=i._id%>" onChange="this.form.submit()">
             <p><%= i.name %></p>
           </div>
+          <input type="hidden" name="listName" value="<%=KindOfDay %>"></input>
         </form>
         <% }) %>
 
       <div class="item">
         <form class="item" action="/" method="post">
             <input type="text" name="input" placeholder="NewItem" autocomplete="off">
-            <button type="submit">+</button>
+            <button type="submit" name="list" value="<%=KindOfDay %>">+</button>
           </form>
       </div>
     </div>
