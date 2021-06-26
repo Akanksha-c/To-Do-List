@@ -8,7 +8,7 @@ app.set("view engine","ejs");
 
 app.use(express.static("public"))
 
-mongoose.connect("mongodb://localhost:27017/todolistDB",{useNewUrlParser:true});
+mongoose.connect("mongodb+srv://admin-akanksha:yamahapsri425@cluster0.i5yyk.mongodb.net/todolistDB",{useNewUrlParser:true});
 
 var today= new Date()
 
@@ -142,6 +142,11 @@ if(listName===day){
 
 });
 
-app.listen(3000,function(req,res){
+let port = process.env.PORT;
+if (port == null || port == "") {
+  port = 3000;
+}
+
+app.listen(port,function(req,res){
   console.log("The server has started!");
 });
