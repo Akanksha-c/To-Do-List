@@ -8,7 +8,7 @@ app.set("view engine","ejs");
 
 app.use(express.static("public"))
 
-mongoose.connect("mongodb+srv://admin-akanksha:yamahapsri425@cluster0.i5yyk.mongodb.net/todolistDB",{useNewUrlParser:true});
+mongoose.connect("mongodb+srv://admin-username:password@cluster0.i5yyk.mongodb.net/todolistDB",{useNewUrlParser:true});
 
 var today= new Date()
 
