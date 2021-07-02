@@ -20,7 +20,8 @@ Initially open Gitbash in case of using Windows OS,
 3) npm init
 4) npm install express
 5) npm install body-parser
-6) npm install -g nodemon
+6) npm install mongoose
+7) npm install -g nodemon
 
 To Run,
 nodemon app.js
